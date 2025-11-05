@@ -30,10 +30,4 @@ jobs:
         echo "## Functions Available:" >> DOCUMENTATION.md
         echo "- add(a, b) - Addition function" >> DOCUMENTATION.md
         echo "- multiply(a, b) - Multiplication function" >> DOCUMENTATION.md
-    - name: Commit documentation
-      run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        git add DOCUMENTATION.md
-        git commit -m "Auto-generate documentation" || exit 0
-        git push
+
